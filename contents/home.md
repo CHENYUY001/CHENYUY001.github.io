@@ -2,7 +2,7 @@
 
 [![CHENYUY001](https://img.shields.io/badge/CHENYUY001-github-blue?logo=github)]((https://github.com/CHENYUY001))
 
-He is currently pursuing a Mphil's Degree in The Hong Kong University of Science and Technology(Guangzhou).
+He is currently pursuing an Mphil's Degree in The Hong Kong University of Science and Technology(Guangzhou).
 
 #### Contact
 
