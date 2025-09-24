@@ -6,7 +6,7 @@ He is currently pursuing an Mphil's Degree in The Hong Kong University of Scienc
 
 #### Contact
 
-Email: cyuan866[at]connect.hkustgz.edu.cn
+Email: cyuan866[at]connect.hkust-gz.edu.cn
 
 #### Education
 Mphil Student, The Hong Kong University of Science and Technology(Guangzhou), 2025—present.
