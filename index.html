@@ -1,177 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Academic Webpage" />
     <meta name="author" content="chenyuy001" />
-    <title id="title"></title>
-
-    <!-- Icon -->
+    <title id="title">Chenyu Yuan's Homepage</title>
     <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
-
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
-
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-
-    <!-- For Compatability -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    
-    <!-- Markdown -->
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
-
-    <!-- Mathematics -->
-    <script>
-        // See https://docs.mathjax.org/en/latest/index.html for more details.
-        MathJax = {
-            tex: {
-                packages: {},              // extensions to use
-                inlineMath: [              // start/end delimiter pairs for in-line math
-                    ['$', '$'],
-                    ['\\(', '\\)']
-                ],
-                displayMath: [             // start/end delimiter pairs for display math
-                    ['$$', '$$'],
-                    ['\\[', '\\]']
-                ],
-                processEscapes: false,      // use \$ to produce a literal dollar sign
-                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
-                processRefs: true,         // process \ref{...} outside of math mode
-                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
-                tags: 'all',              // or 'ams' or 'all'
-                tagSide: 'right',          // side for \tag macros
-                tagIndent: '0.8em',        // amount to indent tags
-                useLabelIds: true,         // use label name rather than tag for ids
-                maxMacros: 10000,          // maximum number of macro substitutions per expression
-                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
-                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
-                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
-                formatError:               // function called when TeX syntax errors occur
-                    (jax, err) => jax.formatError(err)
-            }
-        };
-    </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
+    <link rel="stylesheet" href="static/css/main.css" />
+    <script defer src="static/js/marked.min.js"></script>
+    <script defer src="static/js/js-yaml.min.js"></script>
+    <script defer src="static/js/scripts.js"></script>
 </head>
-
 <body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header class="masthead">
+        <nav class="masthead-inner" id="mainNav" aria-label="Main navigation">
+            <a id="page-top-title" class="site-title" href="#page-top">Chenyu Yuan</a>
+            <button class="menu-toggle" type="button" aria-controls="navbarResponsive" aria-expanded="false" hidden>
+                <span>MENU</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
+            <ul class="nav-links" id="navbarResponsive">
+                <li><a class="nav-link" href="#home" aria-current="location">HOME</a></li>
+                <li><a class="nav-link" href="#publications">PUBLICATIONS</a></li>
+                <li><a class="nav-link" href="#awards">AWARDS</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                </ul>
+    <main class="page-layout">
+        <aside class="author-profile" aria-label="Personal profile">
+            <img class="author-avatar" src="static/assets/img/photo.png" alt="Chenyu Yuan" width="175" height="175" />
+            <div class="author-details">
+                <h2 id="profile-name">Chenyu Yuan</h2>
+                <p id="top-section-bg-text" class="author-bio">Computer Science</p>
+                <a class="author-link" href="https://github.com/chenyuy001">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.08c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.73 1.16 1.73 1.16 1 1.73 2.63 1.23 3.27.94.1-.73.39-1.23.71-1.51-2.5-.28-5.13-1.25-5.13-5.57 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.97 0 0 .95-.3 3.08 1.15A10.7 10.7 0 0 1 12 6.15c.95 0 1.9.13 2.8.38 2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.12 2.97.72.79 1.15 1.79 1.15 3.02 0 4.33-2.64 5.29-5.15 5.57.4.35.76 1.03.76 2.08v3.07c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z" /></svg>
+                    Github
+                </a>
             </div>
-        </div>
-    </nav>
+        </aside>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/background.jpg');">
-        <div class="top-section-content">
-            <div class="container px-5">
-                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Top Section -->
+        <article class="page-content">
+            <section id="home" class="content-section" aria-labelledby="home-subtitle" tabindex="-1">
+                <h1 id="home-subtitle">Chenyu Yuan&ensp;|&ensp;苑晨宇</h1>
+                <div class="main-body" id="home-md" aria-busy="true"></div>
+            </section>
+            <section id="publications" class="content-section" aria-labelledby="publications-subtitle" tabindex="-1">
+                <h2 id="publications-subtitle">PUBLICATIONS</h2>
+                <div class="main-body" id="publications-md" aria-busy="true"></div>
+            </section>
+            <section id="awards" class="content-section" aria-labelledby="awards-subtitle" tabindex="-1">
+                <h2 id="awards-subtitle">AWARDS</h2>
+                <div class="main-body" id="awards-md" aria-busy="true"></div>
+            </section>
+            <noscript><p>JavaScript is needed to display the Markdown content. You can read the original <a href="contents/home.md">home</a>, <a href="contents/publications.md">publications</a>, and <a href="contents/awards.md">awards</a> files directly.</p></noscript>
+        </article>
+    </main>
 
-    <!-- Photo -->
-    <div class="container px-5">
-        <div id="avatar">
-            <img class="shadow" src="static/assets/img/photo.png">
-        </div>
-    </div>
-    <!-- Photo -->
-    
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
-        </div>
-    </section>
-    <!-- Home -->
-
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
-        </div>
-    </section>
-    <!-- Awards -->
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/chenyuy001">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/chenyuy001/chenyuy001.github.io/blob/main/LICENSE">License</a>
-            </div>
+    <footer class="page-footer">
+        <div class="footer-inner">
+            <div id="copyright-text">&copy; Chenyu Yuan 2023-2025. All Rights Reserved.</div>
+            <a id="github-link" href="https://github.com/chenyuy001">Github</a>
+            <span aria-hidden="true"> · </span>
+            <a id="license-link" href="https://github.com/chenyuy001/chenyuy001.github.io/blob/main/LICENSE">License</a>
         </div>
     </footer>
-
 </body>
-
 </html>
