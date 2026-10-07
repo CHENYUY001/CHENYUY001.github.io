@@ -1,8 +1,8 @@
 const contentDir = 'contents/';
-const sectionNames = ['home', 'publications', 'awards'];
+const sectionNames = ['home', 'publications', 'experience', 'awards'];
 
 async function readText(path) {
-    const response = await fetch(path);
+    const response = await fetch(path, { cache: 'no-cache' });
     if (!response.ok) throw new Error(`Unable to load ${path}: ${response.status}`);
     return response.text();
 }
