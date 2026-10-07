@@ -106,7 +106,6 @@ button { font: inherit; }
 .author-link { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; }
 .author-link:hover { text-decoration: underline; }
 .author-link svg { flex-shrink: 0; width: 14px; height: 14px; }
-#experience-md > h3:first-child { margin-top: 0; }
 .page-content { min-width: 0; overflow-wrap: break-word; }
 h1, .content-section > h2 { margin: 0 0 18px; font-size: 28.134px; line-height: 1.2; font-weight: 700; }
 .content-section + .content-section { margin-top: 36px; }
