@@ -111,7 +111,6 @@ button { font: inherit; }
 .page-content { min-width: 0; overflow-wrap: break-word; }
 h1, .content-section > h2 { margin: 0 0 14.067px; font-size: 28.134px; line-height: 1.2; font-weight: 700; }
 #home-subtitle { line-height: 1; }
-#publications-md, #awards-md { font-size: 14px; line-height: 1.5; }
 #publications-md em { font-style: normal; }
 .content-section + .content-section { margin-top: 36px; }
 .content-section:focus { outline: none; }
