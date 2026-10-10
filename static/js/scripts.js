@@ -1,5 +1,5 @@
 const contentDir = 'contents/';
-const sectionNames = ['home', 'publications', 'awards'];
+const sectionNames = ['home', 'educations', 'publications', 'awards'];
 
 async function readText(path) {
     const response = await fetch(path, { cache: 'no-cache' });

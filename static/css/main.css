@@ -1,6 +1,7 @@
 /* Academic-style layout inspired by wutianyuan1.github.io / AcademicPages. */
 :root {
     color-scheme: light;
+    --font: 'Trebuchet MS', 'Lucida Grande', 'Optima', 'Cardo', 'HelveticaNeue', 'Helvetica Neue', 'Arial', sans-serif;
     --text: #494e52;
     --muted: #7a8288;
     --link: #52adc8;
@@ -15,7 +16,7 @@ body {
     padding-top: var(--masthead-height);
     color: var(--text);
     background: #fff;
-    font: 18px/1.5 -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font: 16px/1.5 var(--font);
     -webkit-text-size-adjust: 100%;
 }
 a { color: var(--link); text-underline-offset: 2px; }
@@ -52,7 +53,8 @@ button { font: inherit; }
 }
 .site-title {
     flex: 0 0 246px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 300;
 }
 .masthead a { color: var(--text); text-decoration: none; }
 .masthead a:hover { color: var(--text); }
@@ -89,7 +91,7 @@ button { font: inherit; }
     padding: 0 18px;
     align-items: start;
 }
-.author-profile { position: sticky; top: 106px; font-size: 13.5px; }
+.author-profile { position: sticky; top: 106px; font-size: 14px; }
 .author-avatar {
     display: block;
     width: 175px;
@@ -100,7 +102,7 @@ button { font: inherit; }
     object-fit: cover;
     object-position: center;
 }
-.author-details h2 { margin: 10px 0 0; font-size: 18px; line-height: 1.2; }
+.author-details h2 { margin: 10px 0 0; font-size: 19px; font-weight: 300; line-height: 1.5; }
 .author-bio { margin: 10px 0 20px; }
 .author-meta { display: flex; flex-direction: column; gap: 6.75px; margin: 0 0 10px; padding: 0; list-style: none; }
 .author-meta li { display: flex; align-items: center; gap: 10px; }
@@ -109,8 +111,7 @@ button { font: inherit; }
 .author-link:hover { text-decoration: underline; }
 .author-meta svg, .author-link svg { flex-shrink: 0; width: 14px; height: 14px; }
 .page-content { min-width: 0; overflow-wrap: break-word; }
-h1, .content-section > h2 { margin: 0 0 14.067px; font-size: 28.134px; line-height: 1.2; font-weight: 700; }
-#home-subtitle { line-height: 1; }
+h1, .content-section > h2 { margin: 0 0 14.067px; font-size: 30px; line-height: 1.5; font-weight: 400; }
 #publications-md em { font-style: normal; }
 .content-section + .content-section { margin-top: 36px; }
 .content-section:focus { outline: none; }
@@ -124,7 +125,7 @@ h1, .content-section > h2 { margin: 0 0 14.067px; font-size: 28.134px; line-heig
 .main-body pre { max-width: 100%; overflow-x: auto; padding: 1em; background: #f2f3f3; }
 .main-body table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
 .main-body th, .main-body td { padding: .5em; border: 1px solid #bdc1c4; }
-.page-footer { border-top: 1px solid #bdc1c4; background: #f2f3f3; color: #6f777d; font-size: 13.5px; }
+.page-footer { border-top: 1px solid #bdc1c4; background: #f2f3f3; color: #6f777d; font-size: 13px; }
 .footer-inner { max-width: 1280px; margin: auto; padding: 32px 18px; }
 .footer-inner > div { margin-bottom: 8px; }
 .page-footer a { color: inherit; text-decoration: none; }
@@ -136,7 +137,6 @@ h1, .content-section > h2 { margin: 0 0 14.067px; font-size: 28.134px; line-heig
     .site-title { flex-basis: 216px; }
 }
 @media (max-width: 767px) {
-    body { font-size: 16px; }
     .masthead-inner { flex-wrap: wrap; justify-content: space-between; }
     .site-title { flex-basis: auto; padding: 21px 0; }
     .menu-toggle {
@@ -159,9 +159,31 @@ h1, .content-section > h2 { margin: 0 0 14.067px; font-size: 28.134px; line-heig
     .page-layout { display: block; margin-top: 28px; margin-bottom: 56px; }
     .author-profile { position: static; display: flex; align-items: center; gap: 20px; margin-bottom: 34px; }
     .author-avatar { flex-shrink: 0; width: 110px; height: 110px; padding: 4px; }
-    .author-details h2 { margin-top: 0; font-size: 16px; }
+    .author-details h2 { margin-top: 0; }
     .author-bio { margin-bottom: 10px; }
     .main-body h2, .main-body h3 { font-size: 20px; }
+}
+/* School emblems and two-line education entries, following the reference. */
+.main-body .education-list { list-style: none; margin: 0; padding: 0; }
+.main-body .education-entry {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 18px 0;
+    border-bottom: 1px solid #e9eaeb;
+}
+.education-entry:first-child { border-top: 1px solid #e9eaeb; }
+.education-logo { display: block; width: 80px; height: 80px; object-fit: contain; }
+.main-body .education-details p { margin: 0; }
+.main-body .education-details p + p { margin-top: 6px; }
+.education-details { min-width: 0; }
+@media (max-width: 600px) {
+    body { font-size: 15px; }
+    h1, .content-section > h2 { font-size: 27px; }
+    .main-body .education-entry { grid-template-columns: 56px minmax(0, 1fr); gap: 16px; }
+    .education-logo { width: 56px; height: 56px; }
 }
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
